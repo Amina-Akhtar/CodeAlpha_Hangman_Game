@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classic Hangman Game</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <h1 class="main-heading">Hangman Game</h1>
+  <div class="game-container">
+    <div class="game-controls">
+      <p id="wordDisplay"></p>
+      <p id="message"></p>
+      <input type="text" id="letterInput" maxlength="1" placeholder="Enter a letter" autofocus>
+      <button id="guessButton">Guess</button>
+      <p id="incorrectGuesses">Letters Used: </p>
+      <p id="remainingAttempts">Remaining attempts: 6</p>
+    </div>
+    <div class="hangman-drawing">
+      <canvas id="hangmanCanvas" width="200" height="200"></canvas>
+    </div>
+  </div>
+  <script src="/static/script.js"></script>
+</body>
+</html>
